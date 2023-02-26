@@ -1,0 +1,5 @@
+letter = input()
+number = input()
+number2 = input()
+letter2 = input()
+print (letter + number, number2 + letter2)
