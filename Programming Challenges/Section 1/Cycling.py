@@ -7,4 +7,4 @@ distance = (circ * rev) / 1000000
 speed = distance/(mins/60)
 
 print("You covered", distance, "km.")
-print("At an average speed of")
+print("At an average speed of", speed, "kmh.")
