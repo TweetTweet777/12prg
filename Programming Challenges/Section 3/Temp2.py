@@ -11,5 +11,5 @@ for loop in range(4):
         total = total + temp
 
     print("Week", loop + 1, "average was:")
-    avg = total /7 
+    avg = total / 7 
     print(round(avg,2), "degrees centigrade")
