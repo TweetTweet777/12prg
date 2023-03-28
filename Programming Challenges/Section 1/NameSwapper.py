@@ -1,3 +1,3 @@
-fname = input();
-sname = input();
+fname = input()
+sname = input()
 print(sname, fname)
