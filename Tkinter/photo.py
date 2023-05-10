@@ -1,22 +1,19 @@
-# Import required libraries
-from tkinter import *
-from PIL import ImageTk, Image
+import tkinter as tk
+from tkinter import ttk
+from PIL import Image, ImageTk
 
-# Create an instance of tkinter window
-win = Tk()
 
-# Define the geometry of the window
-win.geometry("700x500")
+class App(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title('Tkinter PhotoImage Demo')
 
-frame = Frame(win, width=600, height=400)
-frame.pack()
-frame.place(anchor='center', relx=0.5, rely=0.5)
+        self.image = Image.open('TweetTweet777/12prg/Tkinter/image.png')
+        self.python_image = ImageTk.PhotoImage(self.image)
 
-# Create an object of tkinter ImageTk
-img = ImageTk.PhotoImage(Image.open("image.jpg"))
+        ttk.Label(self, image=self.python_image).pack()
 
-# Create a Label Widget to display the text or Image
-label = Label(frame, image = img)
-label.pack()
 
-win.mainloop()
+if __name__ == '__main__':
+    app = App()
+    app.mainloop()
